@@ -1,0 +1,45 @@
+---
+title: Automations
+description: Learn how to create and manage automations in Vork
+icon: 'gear'
+---
+
+Automations enable you to reward employees or execute functions (ie. Replenishing boosts) automatically using Vork’s AI.
+
+## Configuring Automations
+
+1. Navigate to Admin > Automations.
+2. Click Configure on the automation you would like to configure.
+3. Enter the amount of stars/boosts/etc to give using a whole number or formula (more on that below).
+4. Click on the toggle to enable the automation.
+5. Click on the save button.
+6. Check the automation card for the Check icon in the top right corner. This verifies that the automation has been enabled.
+    <img src="/images/automation-enabled.png" style={{ borderRadius: '0.5rem', height: "300px" }} />
+
+
+# Automation UI Breakdown
+The automation configuration window consists of 3 main sections: The _description_, _execution interval_, and the _star formula_.
+
+<Frame>
+    <img src="/images/automation_ui.png" style={{ borderRadius: '0.5rem' }} />
+</Frame>
+
+#### Description
+
+The description gives a detailed breakdown of how the automation works behind the scenes.
+
+#### Execution Interval
+
+Vork’s AI executes automations at various time intervals. Some are pre-determined, but some are configurable (e.g. Boost Refresh Automation). If the interval is pre-determined it will have a time value (e.g. 30 MIN means the automation runs every 30 mins). If the interval is configurable it will say Custom.
+
+#### Star Formula
+
+To give you more flexibility when issuing stars/boosts/etc there is a formula box that allows you to execute mathematical formulas. Some automations come with variables that allow you to get creative when creating formulas.
+
+For example: If you typed `@age * 5` as the star formula in the Birthday Automation. If someone in the company turned 30, they would be issued 150 stars.
+
+# Automations & Connections
+
+Automations are categorized into groups such as Calendar Automations or Survey Automations. Certain automation groups are linked to Connections. If you enable an automation in specific groups, certain connections be enabled.
+
+**For Example:** If you enable the **_Optimized Meeting_** automation under the Calendar Automations group it will enable the Calendar Connections.
