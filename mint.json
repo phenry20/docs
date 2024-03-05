@@ -52,7 +52,16 @@
               "admin/user-management/modify-users"
             ]
         },
-        "admin/automations"
+        "admin/automations",
+        "admin/star-links",
+        "admin/survey-tracker",
+        "admin/billing"
+      ]
+    },
+    {
+      "group": "Quick Help",
+      "pages": [
+        "help/faq"
       ]
     }
   ],
@@ -60,7 +69,7 @@
     "linkedin": "https://www.linkedin.com/company/73515300"
   },
   "modeToggle": {
-    "enabled": false,
-    "default": "light"
+    "default": "light",
+    "isHidden": true
   }
 }

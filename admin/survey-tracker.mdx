@@ -1,0 +1,55 @@
+---
+title: Survey Tracker
+description: Learn how you can automatically grant stars for survey completions.
+icon: 'square-poll-vertical'
+---
+
+<Note> It does take a bit of work to configure the Survey Tracker and we currently only support Google Forms. If you want a faster or alternative way to reward survey completions visit the [Star Links](/admin/star-links) page. Scroll down to learn more about the differences between star links and the survey tracker.</Note>
+
+## Tracking Survey Completions
+
+
+<Steps>
+    <Step title="Enable the Automation">
+        Navigate to Admin > Automations on the Vork Dashboard and enable the Survey Complete automation. This will enable the Google Forms Connection.
+    </Step>
+
+    <Step title="Create a tracker">
+        Navigate to Admin > Survey Tracker and click on the "Add New" button.
+    </Step>
+
+    <Step title="Enter the required details">
+        | Field | Description                           |
+        | -------- | ------------------------------------- |
+        | Name     | The name to identify the tracker by (just for reference)                  |
+        | Form Type   | Select Google Forms (only option at the moment)                       |
+        | Form Id   | For Google Forms you can find the id in the url on the survey edit screen <Frame><img src="/images/google-forms-id.png" style={{ borderRadius: '0.5rem' }} /></Frame> |
+    </Step>
+
+    <Step title="Track & Copy">
+        Once you click “Track”, a code link will get generated. Click on the copy button to copy the link.
+    </Step>
+
+    <Step title="Add to your survey">
+        Add a description to your survey with the code link to let the participants know that they will be rewarded for completing the survey followed by a **Vork Code** short answer field.
+
+        <Card title="You can use the following text as a template" icon="text">
+            <br/>
+            Thanks for completing the survey! Click on the following link ([INSERT_LINK_HERE]) to generate your unique survey code. Insert the code in the "Vork Code" field below to receive your reward.
+            <br/>
+            **Note:** You must have the Google Forms connection configured in the Vork Dashboard in order to receive your stars.
+        </Card>
+
+        <Frame caption="An example of what the end of your survey should look like">
+            <img src="/images/survey-tracker-example.png" style={{ borderRadius: '0.5rem' }} />
+        </Frame>
+    </Step>
+</Steps>
+
+## Star Links vs Survey Tracker
+
+You may be asking yourself: What’s the point of the Survey Tracker, isn’t it just Star Links with more steps?
+
+The main difference with the survey tracker and Star links is that it prevents employees from attempting to game the system on survey completions. If you share Star Links at the end of survey, an employee can share that same link with another employee who hadn’t completed the survey and they would still get the stars.
+
+With the Survey Tracker that’s not possible because Vork’s AI checks the actual survey responses for the unique code meaning the employee must reach the end of the survey to enter their code.
