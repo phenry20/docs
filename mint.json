@@ -32,6 +32,12 @@
   ],
   "navigation": [
     {
+      "group": "",
+      "pages": [
+        "introduction"
+      ]
+    },
+    {
       "group": "Get Started",
       "pages": [
         "getting-started/rewards",
