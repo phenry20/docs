@@ -58,7 +58,14 @@
               "admin/user-management/modify-users"
             ]
         },
-        "admin/automations",
+        {
+          "group": "Automations",
+          "icon": "user-robot",
+          "pages": [
+              "admin/automations/index",
+              "admin/automations/star-formula"
+            ]
+        },
         "admin/star-links",
         "admin/survey-tracker",
         "admin/billing"

@@ -1,0 +1,64 @@
+---
+title: Stars Formulas
+description: Learn how to customize how stars are issued with Vork automations.
+icon: 'star'
+---
+
+Stars Formulas allow you to customize how stars are issued with Vork automations. This feature is available in automations that issue stars, boosts, or other rewards.
+
+## How to Use Star Formulas
+
+It may seem a bit daunting at first, but it's actually quite simple. You can use basic math operators such as `+`, `-`, `*` (multiply), `/`, `^` (exponents), `()` and more to create formulas. You can also use variables that are unique to each automation.
+
+
+### Variables
+
+Certain automations come with variables that you can use in your formulas. Variables are always preceded by the `@` symbol and represent a value that can be used in your formula.
+
+For example, the Birthday Automation comes with the `@age` variable. This variable represents the age of the person who has a birthday. If you wanted to give the person 5 stars for every year they've been alive, you could use the formula `@age * 5`.
+
+<Frame>
+    <img src="/images/variables-input.png" style={{ borderRadius: '0.5rem' }} />
+</Frame>
+
+
+### Basic Math Operators
+
+As mentioned earlier, you can use basic math operators to create formulas. Here are some examples:
+
+- `+` (addition)
+- `-` (subtraction)
+- `*` (multiplication)
+- `/` (division)
+- `^` (exponents - e.g. `2^3` is 2 to the power of 3)
+- `()` (parentheses - e.g. `(2 + 3) * 4`)
+
+### Conditionals
+
+You can also use conditionals in your formulas. Conditionals allow you to execute different formulas based on a condition. Conditionals are written in the following format: `condition ? formula1 : formula2`.
+
+For example, if you wanted to give someone 10 stars if they are older than 30 and 5 stars if they are younger than 30, you could use the formula `@age > 30 ? 10 : 5`.
+
+Here are some examples of conditionals:
+
+- `>` (greater than)
+- `<` (less than)
+- `>=` (greater than or equal to)
+- `<=` (less than or equal to)
+- `==` (equal to)
+- `!=` (not equal to)
+
+### Advanced Operators
+
+These are rarely used, but you can also use the following advanced operators in your formulas:
+
+- `!` (factorial - e.g. `5!` is 5 factorial)
+- `sqrt()` (square root - e.g. `sqrt(25)` is the square root of 25)
+- `abs()` (absolute value - e.g. `abs(-5)` is the absolute value of -5)
+- `round()` (round to the nearest integer - e.g. `round(5.5)` is 6)
+- `pi` (the value of pi)
+- `%` (modulus OR remainder - e.g. `5 % 2` is 1)
+
+## Please Note
+
+If you enter an invalid formula (ie. Division by zero), the automation will issue 0 stars so be sure to validate your formulas before saving.
