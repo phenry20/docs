@@ -23,7 +23,7 @@
   ],
   "topbarCtaButton": {
     "name": "Dashboard",
-    "url": "https://dashboard.vork.app"
+    "url": "https://vork.app"
   },
   "tabs": [
   ],
@@ -69,6 +69,12 @@
         "admin/star-links",
         "admin/survey-tracker",
         "admin/billing"
+      ]
+    },
+    {
+      "group": "Integrations",
+      "pages": [
+        "integrations/slack"
       ]
     },
     {
