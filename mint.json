@@ -40,11 +40,8 @@
     {
       "group": "Get Started",
       "pages": [
-        "getting-started/rewards",
-        "getting-started/activity-log",
-        "getting-started/connections",
-        "getting-started/goals",
-        "getting-started/voice"
+        "getting-started/objectives",
+        "getting-started/goals"
       ]
     },
     {
@@ -58,23 +55,7 @@
               "admin/user-management/modify-users"
             ]
         },
-        {
-          "group": "Automations",
-          "icon": "user-robot",
-          "pages": [
-              "admin/automations/index",
-              "admin/automations/star-formula"
-            ]
-        },
-        "admin/star-links",
-        "admin/survey-tracker",
         "admin/billing"
-      ]
-    },
-    {
-      "group": "Integrations",
-      "pages": [
-        "integrations/slack"
       ]
     },
     {
