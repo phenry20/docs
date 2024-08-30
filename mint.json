@@ -41,7 +41,21 @@
       "group": "Get Started",
       "pages": [
         "getting-started/objectives",
-        "getting-started/goals"
+        "getting-started/goals",
+        "getting-started/tasks"
+      ]
+    },
+    {
+      "group": "Integration Guides",
+      "pages": [
+        "integrations/overview",
+        "integrations/jira",
+        "integrations/clickup",
+        "integrations/gcalendar",
+        "integrations/teams-calendar",
+        "integrations/gtasks",
+        "integrations/gdocs",
+        "integrations/gsheets"
       ]
     },
     {
