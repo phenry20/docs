@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Vork Docs",
+  "name": "KnowKR Docs",
   "logo": {
     "dark": "/logo/logo-w-text.png",
     "light": "/logo/logo-w-text.png"
@@ -18,12 +18,12 @@
   "topbarLinks": [
     {
       "name": "Support",
-      "url": "mailto:support@vork.app"
+      "url": "mailto:support@knowkr.app"
     }
   ],
   "topbarCtaButton": {
     "name": "Dashboard",
-    "url": "https://vork.app"
+    "url": "https://knowkr.app"
   },
   "tabs": [
   ],

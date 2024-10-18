@@ -1,10 +1,10 @@
 ---
 title: Google Docs
-description: Automatically create and update tasks in Vork from Google Documents.
+description: Automatically create and update tasks in KnowKR from Google Documents.
 icon: 'file-doc'
 ---
 
-The Google Docs integration allows you to automatically create and update tasks in Vork from your documents.
+The Google Docs integration allows you to automatically create and update tasks in KnowKR from your documents.
 This integration along with other Google Drive integrations (Slides, Sheets, etc) work slightly differently than other integrations for
 <Tooltip tip="Scroll to the bottom of the page for more information">privacy reasons</Tooltip>.
 
@@ -12,7 +12,7 @@ This integration along with other Google Drive integrations (Slides, Sheets, etc
 
 This integration is perfect for individuals who work with Google Docs and want to keep track of how their documents contribute towards business goals and objectives.
 
-## How to Integrate Vork with Google Docs
+## How to Integrate KnowKR with Google Docs
 
 Because Google Docs supports Google Tasks, you can either directly integrate with your document or simulate an integration by adding a task to the document.
 
@@ -20,15 +20,15 @@ Because Google Docs supports Google Tasks, you can either directly integrate wit
 
 <Steps>
     <Step title="Open your Doc">
-        Open the Google Document you want to integrate with Vork.
+        Open the Google Document you want to integrate with KnowKR.
     </Step>
-    <Step title="Share with Vork Bot">
-        Click on the "Share" button and share the document with the Vork Bot email address *integrate@vork.app* and give it "Editor" permissions.
+    <Step title="Share with KnowKR Bot">
+        Click on the "Share" button and share the document with the KnowKR Bot email address *integrate@knowkr.app* and give it "Editor" permissions.
 
         <Note>Editor permissions are needed so that the bot can identify the users that are collaborating on the document. The bot at no point will edit the document in any way.</Note>
     </Step>
     <Step title="That's It">
-        Sit back, relax, and give Vork some time to scan the document and create a task for you.
+        Sit back, relax, and give KnowKR some time to scan the document and create a task for you.
     </Step>
 </Steps>
 
@@ -36,41 +36,41 @@ Because Google Docs supports Google Tasks, you can either directly integrate wit
 
 <Steps>
     <Step title="Integrate with Google Tasks">
-        Navigate to the Integrations page on the Vork Dashboard and connect Google Tasks.
+        Navigate to the Integrations page on the KnowKR Dashboard and connect Google Tasks.
     </Step>
     <Step title="Add Task to document">
         Add a task to the document and assign it to yourself (or the appropriate user).
     </Step>
     <Step title="That's It">
-        Vork will automatically create a corresponding task for you based on the task title and assign it to the appropriate goal.
+        KnowKR will automatically create a corresponding task for you based on the task title and assign it to the appropriate goal.
     </Step>
 </Steps>
 
-<Note>Simulated integration is useful when you want to integrate with a document but don't want to give Vork access to all your Google Docs.</Note>
-<Warning>A simulated integration won't be able to detect document collaborators so Vork will only show a task for the assigned user.</Warning>
+<Note>Simulated integration is useful when you want to integrate with a document but don't want to give KnowKR access to all your Google Docs.</Note>
+<Warning>A simulated integration won't be able to detect document collaborators so KnowKR will only show a task for the assigned user.</Warning>
 
 ## How it works
 
 If you're using the simulated integration, refer to the [Google Tasks](/integrations/gtasks) guide for more information.
 
-Vork's AI will scan the document title and content and do the following:
+KnowKR's AI will scan the document title and content and do the following:
 
-1. Create a corresponding task in Vork based on the document title
-2. Assign it to tbe appropriate goal by analyzing the task title and description. If the task title or description contains a goal tag, Vork will automatically assign the task to that goal otherwise it will do its best to assign it to the appropriate goal based on the context.
+1. Create a corresponding task in KnowKR based on the document title
+2. Assign it to tbe appropriate goal by analyzing the task title and description. If the task title or description contains a goal tag, KnowKR will automatically assign the task to that goal otherwise it will do its best to assign it to the appropriate goal based on the context.
 3. Update the document state based on the document title. See below for more information.
 
 ## Completing Document Tasks
 
 ### Using State Tags
 
-To mark a document as completed, you can add a state tag to the document title. For example, if you have a document titled "Business Plan" and you want to mark it as done, you can change the title to "Business Plan [Done]". Vork will automatically mark the corresponding task as completed.
+To mark a document as completed, you can add a state tag to the document title. For example, if you have a document titled "Business Plan" and you want to mark it as done, you can change the title to "Business Plan [Done]". KnowKR will automatically mark the corresponding task as completed.
 
 ## How to Update Document Tasks
 
-When you update a document in Google Docs, Vork will automatically update the corresponding task in Vork. This way, you can easily see your progress towards goals without manually needing to update them.
-Tasks update periodically throughout the day so if you make a change in Google Docs, it may take some time to reflect in Vork.
+When you update a document in Google Docs, KnowKR will automatically update the corresponding task in KnowKR. This way, you can easily see your progress towards goals without manually needing to update them.
+Tasks update periodically throughout the day so if you make a change in Google Docs, it may take some time to reflect in KnowKR.
 
 # Privacy and Security
-We take privacy and security very seriously and Vork at no point stores any of the contents of your documents.
-To ensure maximum privacy and security, Vork does not ask for access to all your Google Docs. Instead, you share the documents you want to track with us. This ensures that Vork only has access to the documents you grant us access too. Again, we don't store the document contents,
+We take privacy and security very seriously and KnowKR at no point stores any of the contents of your documents.
+To ensure maximum privacy and security, KnowKR does not ask for access to all your Google Docs. Instead, you share the documents you want to track with us. This ensures that KnowKR only has access to the documents you grant us access too. Again, we don't store the document contents,
 we merely do this as an additional security measure because maximum security is the best security.
