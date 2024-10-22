@@ -18,12 +18,12 @@
   "topbarLinks": [
     {
       "name": "Support",
-      "url": "mailto:support@knowkr.app"
+      "url": "mailto:support@knowkr.com"
     }
   ],
   "topbarCtaButton": {
     "name": "Dashboard",
-    "url": "https://knowkr.app"
+    "url": "https://knowkr.com"
   },
   "tabs": [
   ],
@@ -41,8 +41,16 @@
       "group": "Get Started",
       "pages": [
         "getting-started/objectives",
-        "getting-started/goals",
-        "getting-started/tasks"
+        {
+            "group": "Key Results",
+            "icon": "bullseye",
+            "pages": [
+              "getting-started/key-results/overview",
+              "getting-started/key-results/activities",
+              "getting-started/key-results/workflows"
+            ]
+        },
+        "getting-started/insights"
       ]
     },
     {
