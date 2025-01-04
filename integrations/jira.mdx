@@ -4,31 +4,9 @@ description: Automatically create and update tasks in KnowKR from Jira.
 icon: 'jira'
 ---
 
+import TasksIntegration from "snippets/tasks-integration.mdx";
+
 The Jira integration allows you to automatically create and update tasks in KnowKR from Jira.
 This integration is perfect for teams that use Jira to manage their projects and want to keep track of their progress towards business goals and objectives.
 
-## How to Integrate KnowKR with Jira
-
-<Steps>
-    <Step title="Navigate to the Integrations Page">
-        Navigate to the Integrations page on the KnowKR Dashboard.
-    </Step>
-    <Step title="Get Connected">
-        Click on the "Connect" button for the Jira integration and follow the instructions to connect your Jira account to KnowKR.
-    </Step>
-    <Step title="That's It">
-        If you have any tasks assigned to you in Jira, KnowKR will automatically create corresponding tasks for you.
-    </Step>
-</Steps>
-
-## How it works
-
-KnowKR's AI will scan all the issues assigned to you in Jira and do the following:
-
-1. Create a corresponding task in KnowKR based on the issue title
-2. Assign it to tbe appropriate KR by analyzing the issue title and description. If the issue title or description contains a KR tag, KnowKR will automatically assign the task to that KR otherwise it will do its best to assign it to the appropriate KR based on the context.
-
-## How to Update Tasks
-
-When you update an issue in Jira, KnowKR will automatically update the corresponding task in KnowKR. This way, you can easily see your progress towards KRs without manually needing to update them.
-Tasks update periodically throughout the day so if you make a change in Jira, it may take some time to reflect in KnowKR.
+<TasksIntegration title="Jira" />

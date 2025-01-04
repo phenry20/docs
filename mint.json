@@ -42,7 +42,7 @@
       "pages": [
         "getting-started/objectives",
         {
-            "group": "Key Results",
+            "group": "Smart Key Results",
             "icon": "bullseye",
             "pages": [
               "getting-started/key-results/overview",
@@ -57,14 +57,33 @@
       "group": "Integration Guides",
       "pages": [
         "integrations/overview",
-        "integrations/jira",
-        "integrations/clickup",
         "integrations/gcalendar",
         "integrations/teams-calendar",
-        "integrations/gtasks",
         "integrations/gdocs",
-        "integrations/gsheets"
+        "integrations/gsheets",
+        "integrations/jira",
+        "integrations/clickup",
+        "integrations/todoist",
+        "integrations/gtasks"
       ]
+    },
+    {
+      "group": "Workflow Guides",
+      "icon": "ruler",
+      "pages": [
+        "workflows/overview",
+          {
+            "group": "Custom",
+            "icon": "robot",
+            "pages": [
+              "workflows/custom/api",
+              "workflows/custom/zapier",
+              "workflows/custom/make"
+            ]
+          },
+          "workflows/jira",
+          "workflows/hubspot"
+        ]
     },
     {
       "group": "Admin Guides",

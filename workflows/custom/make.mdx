@@ -1,0 +1,62 @@
+---
+title: Make
+description: Automatically update Key Result Progress using custom Make workflows.
+icon: 'robot'
+---
+
+import GetApiKey from "/snippets/get-api-key.mdx"
+
+## Overview
+
+KnowKR provides a powerful API that allows you to automate updates to your OKRs. Although there isn't a direct integration between KnowKR and Make, you can still utilize Make's HTTP Module to update your OKRs within Make.
+
+## Step-by-Step Guide
+
+<Steps>
+    <Step title="Obtain Your KnowKR API Key">
+        <GetApiKey />
+    </Step>
+
+    <Step title="Identify the Measurement Value in Your Scenario">
+        1. Set up your Scenario (in Make) to capture the necessary measurement value from an app or service in your workflow.
+        2. Ensure the value is a number and is available as a data variable for use in subsequent steps.
+    </Step>
+
+    <Step title='Add the Http Module'>
+        1. In your Scenario, add a module and search for "Make an API Key Auth Request."
+        2. Click on "Create a keychain" to add your credentials:
+            - Name: KnowKR API Key
+            - Key: Your KnowKR API key obtained in the first step.
+            - Api Key Placement: Header
+            - Header Name: X-API-TOKEN
+        3. Configure the following settings:
+            - URL: https://app.knowkr.com/api/key-results/measurements
+            - Method: POST
+            - Body Type: Raw
+            - Content type: Json (application/json)
+
+            - Body:
+                Replace `your-key-result-id` with the id of your key result (you can get this from selecting a key result on the KnowKR dashboard)
+                and `your-measurement-value` with the measurement value you captured in the previous step (you can use a Make variable).
+                ```json
+                {
+                    "id": "your-key-result-id",
+                    "value": "your-measurement-value"
+                }
+                ```
+    </Step>
+
+    <Step title="Test Your Scenario">
+        1. Save and test your Scenario.
+        2. Ensure the data flows correctly and updates the intended OKR measurement in KnowKR.
+    </Step>
+
+    <Step title="Activate Your Scenario">
+        Once the test is successful, turn on your Scenario to automate OKR measurement updates.
+    </Step>
+</Steps>
+
+## Additional Considerations
+
+**Rate Limits**: Ensure your API usage stays within KnowKR's rate limits (5 requests per minute).
+**Security**: Never expose your API key in publicly shared workflows.

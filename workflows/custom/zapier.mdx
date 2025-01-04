@@ -1,0 +1,66 @@
+---
+title: Zapier
+description: Automatically update Key Result Progress using custom Zapier workflows.
+icon: 'robot'
+---
+
+import GetApiKey from "/snippets/get-api-key.mdx"
+
+## Overview
+
+KnowKR provides a powerful API that allows you to automate updates to your OKRs. Although there isn't a direct integration between KnowKR and Zapier, you can still utilize Zapier's "Code by Zapier" action to update your OKRs within Zapier.
+
+## Step-by-Step Guide
+
+<Steps>
+    <Step title="Obtain Your KnowKR API Key">
+        <GetApiKey />
+    </Step>
+
+    <Step title="Identify the Measurement Value in Your Zap">
+        1. Set up your Zap (in Zapier) to capture the necessary measurement value from an app or service in your workflow.
+        2. Ensure the value is a number and is available as a data variable for use in subsequent steps.
+    </Step>
+
+    <Step title='Add a "Code by Zapier" Action'>
+        1. In your Zap, add an action step and search for "Code by Zapier."
+        2. Select the Run JavaScript option.
+        3. Configure the following settings:
+            - Input Data:
+                - id: The key result id (you can get this from selecting a key result on the KnowKR dashboard)
+                - value: The measurement value you captured in the previous step.
+                - token: Your KnowKR API key obtained in the first step.
+
+                <img src="/images/zapier-input-data.png" style={{ borderRadius: '0.5rem', borderColor: "black" }} />
+            - Code: Use the provided code snippet to update the measurement value for your key result.
+                    ```javascript
+                    await fetch('https://app.knowkr.com/api/key-results/measurements', {
+                        method: "POST",
+                        headers: {
+                            "X-API-TOKEN": inputData.token
+                        },
+                        data: {
+                            // The id of your key result
+                            id: inputData.id,
+
+                            // The new measurement value
+                            value: Number(inputData.value)
+                        }
+                    })
+                    ```
+    </Step>
+
+    <Step title="Test Your Zap">
+        1. Save and test your Zap.
+        2. Ensure the data flows correctly and updates the intended OKR measurement in KnowKR.
+    </Step>
+
+    <Step title="Activate Your Zap">
+        Once the test is successful, turn on your Zap to automate OKR measurement updates.
+    </Step>
+</Steps>
+
+## Additional Considerations
+
+**Rate Limits**: Ensure your API usage stays within KnowKR's rate limits (5 requests per minute).
+**Security**: Never expose your API key in publicly shared workflows.

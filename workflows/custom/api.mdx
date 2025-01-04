@@ -1,0 +1,60 @@
+---
+title: Api
+description: Automatically manage Key Results using custom API workflows.
+icon: 'robot'
+---
+
+import GetApiToken from "/snippets/get-api-key.mdx";
+
+## Overview
+
+The KnowKR API allows you to update OKR measurements programmatically. This guide is primarily for developers who want custom integrations with KnowKR. If you're not a developer, you can use one of the existing integrations below or contact us for help.
+
+## Retrieving Your API Token
+
+<GetApiToken />
+
+## Endpoints
+
+### Update Key Result Measurement
+**Endpoint:**
+`POST https://app.knowkr.com/api/key-results/measurements`
+
+**Description:**
+Updates the measurement value of a specific key result in KnowKR.
+
+**Headers:**
+
+| Key | Value | Required                           |
+| -------- | ------------------------------------- | ----- |
+| X-API-TOKEN     | Your Api Token                    | Yes |
+
+**Request Body:**
+Send a JSON object containing the id of the key result and the new value for its measurement.
+
+```json
+{
+    "id": "your-key-result-id",
+    "value": "your-measurement-value"
+}
+```
+Response:
+
+| Code | Description |
+| -------- | ------------------------------------- |
+|200	|Measurement successfully updated. |
+|400	|Invalid request. Check the payload. |
+|401	|Unauthorized. Check your API token. |
+|500	|Server error. Try again later.|
+
+**Example Request:**
+
+```bash
+curl -X POST https://app.knowkr.com/api/key-results/measurements \
+-H "Content-Type: application/json" \
+-H "X-API-Token: your_api_token" \
+-d '{
+"id": "12345",
+"value": "42"
+}'
+```
